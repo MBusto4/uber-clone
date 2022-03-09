@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Confirm from '../components/Confirm'
+import LocationSelector from '../components/LocationSelector'
 import Map from '../components/Map'
 import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
@@ -24,7 +26,9 @@ export default function Home() {
       <div className={style.rideRequestContainer}>
         <div className={style.rideRequest}>
           {/*Location selector*/}
+          <LocationSelector />
           {/* confirm ride */}
+          <Confirm />
         </div>
       </div>
     </div>
