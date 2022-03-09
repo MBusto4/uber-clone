@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Map from '../components/Map'
 import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
 
@@ -18,6 +19,7 @@ export default function Home() {
       <NavBar />
       <div className={style.main}>
         {/*map*/}
+        <Map />
       </div>
       <div className={style.rideRequestContainer}>
         <div className={style.rideRequest}>
